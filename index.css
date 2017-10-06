@@ -1,0 +1,48 @@
+/* Class of 17ciy23Sep_Tan Julia, submission on 6 Oct 2017*/
+
+/* min-width:500px --> apply to screen size >= 500px */
+@media (max-width:500px){ /*apply to screen size <= 500px*/
+    .change-font-size{
+        font-size: 10px;
+    }   
+}
+.my-thumbnail{
+    width:100%;
+}
+.my-footer{
+    margin: auto;
+    width: 200px;
+    /*text-align: center;*/ /*for text*/
+}
+.my-highlight1{
+    color: orangered;
+    font-size: 4rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.my-highlight2{
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.my-wall-paper{
+    background-image: url("assets/nature6.jpg");
+    /*background-image: url("assets/tai-chi-for-arthritis.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.my-header-font{
+    color: white;
+}
+.my-font{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.my-link{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;    
+    font-style: italic;
+    text-decoration: underline;
+}

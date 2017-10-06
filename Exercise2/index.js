@@ -117,6 +117,7 @@ if (myGuess != toGuess )
 
 // Data stuctures :
 // array - a collection; indexes start from 0
+/*
 var basket = ["milk", "eggs", "bread", 23, false];
 var len = basket.length;
 console.log("size of basket is %d", len );
@@ -141,3 +142,24 @@ while(j<len){
 // FYI : to add things to the front use basket.unshift("apple")
 // shift and unshift works on the front of the array
 // push and pop work on the back of the array
+*/
+
+// an object is a collection of key-value pairs :
+
+var fred = {
+    name: "fred",
+    email: "fred@gmail.com",
+    age: 50,
+    married: true,
+    basket: ["apple", "orange", "grapes"],
+    spouse: {
+        name: "wilma",
+        email: "wilma@gmail.com"
+    }
+}
+
+//fred.spouse.name  is the same as :  fred["spouse"]["name"]
+
+for (var i in fred){
+    console.log(i + " = " + fred[i]);  // don't use fred.i here i is the actual key
+}
