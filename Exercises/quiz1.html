@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            background-color:grey;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            padding:10px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            width: 100%;
+        }
+
+        .child-1 {
+            padding:10px;
+            margin-right:5px;
+            flex-grow:1;
+            flex-basis:100px;
+            text-align: center;
+            border-right: 1px solid whitesmoke;
+        }
+
+        .child-2 {
+            flex-grow:2;
+            flex-basis:300px;
+        }
+        .my-face{
+	        display: block;
+	        width: 100px;
+	        height: 100px;
+	        margin: auto;
+	        border-radius: 50%;
+        	border: 1px solid #aaa;
+        }
+        
+        a:link{
+            text-decoration:none;
+            color: blue;
+        }
+
+        .my-form {
+	        width: 400px;
+	        padding: 10px;
+	        margin: auto;
+            align-items: center;
+        }
+
+        input, textarea, select{
+            width: 100%;
+        }
+
+        input[type=text] {
+	        border: 1px solid black;
+        }
+        
+        input[type=submit]{
+	        border: none;
+	        background-color: black;
+	        color: white;
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-1">
+            <img src="http://stackup.sg/assets/ivan.tan.png" alt="logo" class="my-face">
+
+            <h1>Ivan Tan</h1>
+            <a href="mailto:abc@abc.com" class="link-font">CTO @ Getfash</a>
+            <h4>Choices, Chances, Changes</h4>
+        </div>
+            
+        <div class="child-2">
+            <div>
+                <table>
+                    <tr>
+                        <th>Contact Info</th>
+                        <th>Links</th>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <a href="mailto:ivan.tan@gmail.com"> ivan.tan@gmail.com</a> 
+                        </td>
+                        <td> 
+                            <a href="http://www.facebook.com"> Facebook </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="tel:1234567">1234567</a>
+                        </td>
+                        <td>
+                            <a href="http://www.twitter.com"> Twitter </a> 
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+                
+            <div>
+                <h3>About Me:</h3>
+                <p>
+                    Blah blah blah blah blah. <br>
+                    Blah blah blah blah blah. <br> 
+                    Blah blah blah blah blah. <br>
+                    Blah blah blah blah blah. <br>                
+                </p>
+            </div>
+            <hr>
+            <div>
+                <form action="https://coderinyou-1332.appspot.com/submit" method="post" class="my-form">
+                    <br>
+                    <div>
+                        <input type="text" name="username" placeholder="your name" >	
+                    </div>
+                    <br>
+                    <div>
+                        <select>
+                            <option value="1">Mr.</option>
+                            <option value="2">Mrs.</option>
+                            <option value="3">Mdm.</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <textarea name="my_msg" placeholder="Drop ke a message" cols="30" rows="10"></textarea>			
+                    </div>
+                    <br>
+                    <input type="submit" value="SUBMIT MESSAGES" >
+                </form>                
+            </div>
+        </div>
+                
+    </div>
+</body>
+</html>

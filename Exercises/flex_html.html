@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page.css">
+    <title>Review</title>
+    <style>
+        .container {
+            display: flex;
+            
+            background-color:grey;
+            padding:10px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            width: 100%;
+        }
+
+        .child {
+            background-color:red;
+            padding:10px;
+            flex-grow:1;
+            flex-basis:100px;
+        }
+
+        .child-big{
+            flex-grow:2;
+            flex-basis:300px;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child">
+            div1 <!-- -->
+        </div>
+        <div class="child child-big">
+            div2
+        </div>
+        <div class="child">
+            div3
+        </div>
+    </div>
+    
+
+</body>
+</html>

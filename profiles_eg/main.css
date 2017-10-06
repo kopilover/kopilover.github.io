@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,900');
+
+body{
+    font-family: "Lato";
+    font-weight:normal;
+}
+
+* {
+    /* Auto Calculate the Box Size */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    border-radius:5px;
+    display: flex;
+    flex-direction: row; /* flow direction of items*/
+    flex-wrap: wrap; /* items go beyond the container drop below */
+    justify-content: flex-start; /* all stick to left (default) */
+    background-color:#CAABAB;
+    width:900px;
+    margin:auto; /* center the div */
+}
+
+.flex-35 {
+    padding:20px 10px;
+    margin: 10px;
+    flex-grow:1; /* Responsive */
+    flex-basis:100px; /* initial width value for DIV */
+    text-align:center;
+}
+
+.flex-65 {
+    flex-basis:300px;
+    flex-grow:2; /* responsive and 2x bigger than flex-grow:1 */
+    margin: 10px;
+}
+
+.flex-35 img {
+    max-width:100px;
+    border-radius:50%;
+    display:block;
+    margin:5px auto;
+    border: 2px solid #fff;
+}
+
+td {
+    vertical-align:top;
+    padding:10px;
+}
+
+.inner-div {
+    padding:5px;
+    border-left:1px solid #C4C1C1;
+}
+
+.bio{
+    padding-left:10px;
+}
+
+a {
+    color:#69BAF0;
+    text-decoration:none;
+}
+
+a:hover, a:active, a:focus {
+    color:#25810E;
+    text-decoration:underline;
+}
+
+hr{
+    color:#C4C1C1;
+    margin:10px auto;
+    width:80%;
+}
+
+form{
+    max-width:300px;
+    margin:10px auto;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #C4C1C1;
+    font-size:14px;
+    margin:2px 0px;
+    padding:5px;
+}
+
+input {
+    min-height:40px;
+}
+
+select{
+    width:100%;
+    min-height:40px;
+}
